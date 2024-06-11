@@ -1,0 +1,132 @@
+body{/** Target the body, margin - 0px, a neutral background color**/
+    margin: 0px; 
+    background-color: #f8f8f8; 
+  }
+  h1,h2,h3,h4,h5,h6{/**Target the h1-h6 elements, assign a font**/
+      font-family: "Poppins", sans-serif;
+  }
+  p,a,li,figcaption{/**Target the paragragh, anchor, lists, and figcaption. Assign a font, font size, remove text decoration**/
+    font-family: "Roboto", sans-serif;
+    font-size:20px;
+    text-decoration:none;
+  }
+  /**header**/
+  /**I'm using flexbox for my CSS**/
+  header{/**I'm giving the header background a neutral color and a height of 150px**/
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color:#f8f8f8;
+  }
+  header > div{/**Creates some space between the logo and menu. Resize my logo**/
+    flex-grow: 1;
+    height: 145px;
+    width: auto;
+  }
+  header > div > a > img{
+    width: auto;
+    height: 100%
+  }
+  header > nav > menu{/**removes the bullet points in the lists inside the menu and places them horizontally**/
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    display: flex;
+  }
+  header > nav > menu > li{/**Creates spaces in between the lists in the menu**/
+    padding: 0 10px;
+  }
+  header > nav > menu > li > a{color: darkolivegreen}/**Change the color of my nav lists**/
+  /**masthead**/
+  .lesson-masthead{/**Give my masthead a background color and height. Place content in center**/
+    display: grid;/**I used grid because flex didn't look nice in the masthead**/
+    align-items: center;
+    justify-content: center;
+    background-color: darkolivegreen;
+    height: 60vh;
+  }
+  .lesson-masthead h1{/**Adjust color and size of h1**/
+    color:darkgray;
+    font-size: 35px;
+  }
+  /**main content container (the div that holds the main and aside)**/
+  .flex-content-container{
+    display: flex;
+  }
+  /**main**/
+  main{
+    width: 75%;/**main content will take up 75%, aside will take the remaining 25%**/
+  }
+  main > section{
+    display: flex;
+    padding: 2%;
+    align-items: center;
+  }
+  main > section > div{
+    width: 50%;
+    padding: 10px;
+  }
+  /**Changing my text colors**/
+  main > section > div > h2{color: darkolivegreen;}
+  main > section > div > h2 + p{color: darkolivegreen;}
+  main > section > div > h2 + p + p{color: darkolivegreen;}
+  main > section > div > h3{color: darkolivegreen;}
+  main > section > div > h3 + h4{color: darkolivegreen; }
+  main > section > div > h3 + h4 + p{color: darkolivegreen;}
+
+  main > section > div > img{
+    width: 100%;
+    height: auto;
+  }
+  /**forms**/
+  main > section > div > form{
+    width: 100%;
+  }
+  main > section > div > form > h4 {color: darkolivegreen;}
+  main > section > div > form > h5 {color: darkolivegreen;}
+ 
+  main > section > div > form > input[type="text"],
+  main > section > div > form > input[type="email"],
+  main > section > div > form > input[type="tel"]{
+      border: solid 2px darkolivegreen;
+      margin-bottom: 15px;
+      width: 100%;
+      padding: 10px 5px;
+  }
+  main > section > div > form > input[type="submit"]{
+      border: solid 2px black;
+      background-color:darkolivegreen;
+      color: #f8f8f8;
+      padding: 10px 35px; /** 10px(top & bottom) 35px(left & right) **/
+      font-size: 20px;
+  }
+  /**aside**/
+  aside{
+    width: 25%;
+    padding: 2% 0%;
+    background-color:dimgrey;
+  }
+  aside > article{
+    width: 90%;
+    margin: auto auto 15px auto;
+    text-align: center;
+  }
+  aside > article > figure{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+  aside > article > figure > img{
+    width: 100%;
+    height: auto;
+  }
+  /**footer**/
+  footer{
+    display: flex;
+    align-items: center;
+  }
+  footer > div{
+    width: 100%;
+  }
+  
+
